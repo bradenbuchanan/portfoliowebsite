@@ -58,6 +58,14 @@ nav li a.active {
     grid-gap: 20px;
 }
 
+h1 a, p a {
+  text-decoration: none;
+}
+
+h3 {
+    text-decoration: none;
+}
+
 /* to show how much space i have with the grids
 .item1,
 .item2 {
@@ -89,13 +97,13 @@ nav li a.active {
 
 .item1 h3,
 .item2 h3 {
-    margin: 0;
+    margin-top: 12px;
     text-align: center;
 }
 
 .item1 p,
 .item2 p {
-    margin: 0;
+    margin-top: 2px;
     text-align: center;
 }
 
@@ -109,12 +117,23 @@ nav li a.active {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
+a {
+  text-decoration: none;
+}
+.item h3, .item p {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+
+
 /* Footer */
 footer ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 15px;
   }
   
   footer li {
@@ -152,3 +171,12 @@ footer ul {
   width: 400px;
   height: 450px;
 }
+
+/* Podcast html */
+iframe {
+    padding-top: 3em;
+    width: 100%;
+    height: 800px;
+    border: none;
+  }
+  
