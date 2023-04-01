@@ -8,42 +8,42 @@
 .container {
     margin: 0 auto;
     max-width: 960px;
-  }
+}
 
 /* Nav bar */
 nav {
     overflow: hidden;
     padding-left: 65%;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-  
-  nav li {
+}
+
+nav li {
     display: inline-block;
-  }
-  
-  nav li a {
+}
+
+nav li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  nav li a:hover {
+}
+
+nav li a:hover {
     background-color: #111;
-  }
-  
-  nav li a.active {
+}
+
+nav li a.active {
     color: red;
-  }
+}
 
 /* Header */
-.braden{
+.braden {
     padding-top: 5%
 }
 
@@ -53,24 +53,79 @@ nav {
 
 /*Project grid*/
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+/* to show how much space i have with the grids
+.item1,
+.item2 {
+    background-color: blue;
+} */
+
+.item1 img,
+.item2 img {
+    height: 75%;
+    width: 100%;
+}
+
+.item1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.item2 {
+    grid-row: 1;
+    grid-column: 2;
 }
 
 .item1,
 .item2 {
-  background-color: blue;
-  height: 200px;
-  width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.item1 {
-  grid-row: 1;
-  grid-column: 1;
+.item1 h3,
+.item2 h3 {
+    margin: 0;
+    text-align: center;
 }
 
-.item2 {
-  grid-row: 1;
-  grid-column: 2;
+.item1 p,
+.item2 p {
+    margin: 0;
+    text-align: center;
 }
+
+.item1:hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.item2:hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Footer */
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 150px;
+  }
+  
+  footer li {
+    margin: 0 10px;
+  }
+  
+  footer li a {
+    color: #555;
+    font-size: 20px;
+  }
+  
+  
