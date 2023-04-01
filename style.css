@@ -30,7 +30,7 @@ nav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
 }
 
@@ -39,7 +39,7 @@ nav li a:hover {
 }
 
 nav li a.active {
-    color: red;
+    border-bottom: 2px solid white;
 }
 
 /* Header */
@@ -144,11 +144,11 @@ footer ul {
 
 .about-content p {
   flex-basis: 60%;
-  font-size: 1.2em;
+  font-size: 1 em;
 }
 
 .about-content img {
   flex-basis: 30%;
   width: 400px;
-  height: 400px;
+  height: 450px;
 }
