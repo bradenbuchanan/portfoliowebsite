@@ -4,6 +4,10 @@
     color: #fff;
 }
 
+p {
+    line-height: 120%;
+}
+
 /* Container code */
 .container {
     margin: 0 auto;
@@ -166,7 +170,7 @@ footer li a {
 
 .about-content p {
     flex-basis: 60%;
-    font-size: 1 em;
+    font-size: 16 px;
 }
 
 .about-content img {
@@ -184,3 +188,43 @@ iframe {
 }
 
 /* airbnb-jtbd styling */
+section{
+    padding-top: 10%;
+}
+
+#foreward {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+  }
+
+  .section-title {
+    margin-top: 0;
+  }
+
+/* Section 2 */
+.context-container p {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    /* align the text with the top of the image */
+}
+
+.context-container img {
+    display: inline-block;
+    width: 45%;
+}
+
+
+.context-container p {
+    margin-right: 20px;
+}
+
+.context-container img {
+    margin-left: 20px;
+}
