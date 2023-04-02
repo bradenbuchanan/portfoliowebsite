@@ -5,7 +5,11 @@
 }
 
 p {
-    line-height: 120%;
+    line-height: 130%;
+}
+
+li {
+    line-height: 130%;
 }
 
 /* Container code */
@@ -188,7 +192,7 @@ iframe {
 }
 
 /* airbnb-jtbd styling */
-section{
+section {
     padding-top: 10%;
 }
 
@@ -201,30 +205,45 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 50px;
-  }
+}
 
-  .section-title {
+.section-title {
     margin-top: 0;
-  }
+}
 
 /* Section 2 */
 .context-container p {
+    width: 50%;
     display: inline-block;
-    width: 45%;
     vertical-align: top;
-    /* align the text with the top of the image */
 }
 
-.context-container img {
+.context-container figure {
+    width: 50%;
     display: inline-block;
-    width: 45%;
-}
-
-
-.context-container p {
-    margin-right: 20px;
+    margin-left: 550px;
+    margin-top: -30%;
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
 }
 
 .context-container img {
-    margin-left: 20px;
+    width: 80%;
+}
+
+.context-container figcaption {
+    margin-top: 10px;
+}
+
+/* define-market section */
+.define-market-list {
+    width: 50%;
+}
+
+.man-travel-img {
+    width: 50%;
+    display: inline-block;
+    margin-left: 500px;
+    margin-top: -140%;
 }
