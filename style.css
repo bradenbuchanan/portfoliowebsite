@@ -258,6 +258,9 @@ section {
     height: 140%;
     transition: all 0.2s ease-in-out;
     /* add a transition effect for smooth animation */
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(78, 78, 78, 0.3);
+    border-radius: 5px;
 }
 
 #core-job-travel-img:hover {
@@ -269,6 +272,9 @@ section {
 .job-map-img {
     text-align: center;
     width: 100%;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(78, 78, 78, 0.3);
+    border-radius: 5px;
 }
 
 /* uncover outcomes */
@@ -339,7 +345,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    gap: 20px;
+    gap: 50px;
 }
 
 .flex-5 {
@@ -362,14 +368,23 @@ section {
     grid-column: 2 / 3;
 }
 
-.flex-8 img,
 .flex-6 img {
     width: 90%;
     height: 100%;
 }
 
+.flex-8 img {
+    width: 90%;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(78, 78, 78, 0.3);
+    border-radius: 5px;
+}
+
 .r-img {
     width: 100%;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(78, 78, 78, 0.3);
+    border-radius: 5px;
 }
 
 .flex-5 p,
@@ -378,9 +393,77 @@ section {
 }
 
 .flex-6 img:hover {
-    transform: scale(3.0);
+    transform: scale(1.5);
 }
 
 .flex-8 img:hover {
-    transform: scale(1.7);
+    transform: scale(2.6);
 }
+
+#hyperlink {
+    color: #4e7bc3;
+    text-decoration: underline;
+}
+
+/* Outcome-based segments */
+#outcome-based-segmentation {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  #outcome-based-segmentation img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(78, 78, 78, 0.3);
+    border-radius: 5px;
+  }
+
+  .outcome-based-caption {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 5px;
+    padding-bottom: 50px;
+  }
+
+.three-travel-segments {
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(78, 78, 78, 0.3);
+    border-radius: 5px;
+}
+
+.three-segment-summary {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  
+  .three-segment-summary > div {
+    width: calc(100% / 3);
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .three-segment-summary li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+    text-indent: -22px;
+  }
+  
+  .three-segment-summary li::before {
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+
+
+  #airbnb-learning-more {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  li a {
+    text-decoration: underline;
+  }

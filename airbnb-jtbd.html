@@ -25,9 +25,10 @@
 
   <div class="container">
 
-    <h2 id="project-1-context">Project Context</h2>
+    <h2 id="project-1-context">Foreward</h2>
     <p id="foreward">This is a personal project I wanted to do to practice with my understand of the Jobs-to-be-Done
-      methodology. I made up a situation and context below.</p>
+      methodology. I made up a situation and context below. This project assumes the reader has some familiarity with
+    Jobs-to-be-Done and Outcome-Driven Innovation.</p>
     <!-- Project context -->
     <section>
       <div class="grid-container">
@@ -72,6 +73,7 @@
           <li><a href="#create-job-map">Create a job map</a></li>
           <li><a href="#uncover-outcomes">Uncover outcome statements based on the core job</a></li>
           <li><a href="#quantify-outcomes">Quantification of the outcome statements</a></li>
+          <li><a href="#outcome-based-segmentation">Outcome-based segmentation</a></li>
           <li><a href="#opportunity-landscape">Create opportunity landscape based on quantification of needs</a></li>
         </ul>
 
@@ -212,7 +214,7 @@
           <p>After combining the data to one excel file, I first cleaned the data in excel by removing any
             straightliners (SD SAT <.25) and by noticing patterns in how participants filled out the survey (conditional
               formatting in excel).</p>
-              <p>Next step is to import the raw excel data into RStudio to do the analysis.</p>
+              <p>Next step is to calculate the opportunity score for each outcome statement and create a total market opportunity landscape.</p>
         </div>
         <div class="flex-4">
           <img src="img/excel-results.png" alt="">
@@ -225,31 +227,95 @@
       <h2>Create opportunity landscape based on quantification of needs</h2>
       <div class="context-container-opportunity-landscape">
         <div class="flex-5">
-          <p>Hello world</p>
+          <p>Once the data has been cleaned, I calculated the opportunity score for each outcome statement and plotted the data based on the opportunity landscape.</p>
+          <p>Visually we can see that most of the outcome statements are in the approximately served and underserved areas, while few of the needs are in the overserved area.</p>
+          <p>There are <strong>27</strong> underserved needs from a total market perspective</p>
+          <p></p>
         </div>
+
         <div class="flex-6">
-          <img src="img/r-output.png" alt="" class="r-img">
-        </div>
-        <div class="flex-7">
-            <p>Next step is to import the raw excel data into RStudio to do the analysis.</p>
-        </div>
-        <div class="flex-8">
           <img src="img/total market landscape 2.png" alt="">
         </div>
+        <div class="flex-7">
+            <p>These 27 underserved needs can then be clustered together based on their underlying themes. We can see in the image to the right which themes have the highest opportunity score, mean
+              score, and number of opportunities.
+            </p>
+            <p>In the executive report <a href = "https://docs.google.com/presentation/d/1DGnDO6wqPud1raPRYe9lTJHk_XxrBfxmAx1x9mqFmIU/edit?usp=sharing" id="hyperlink" target="_blank">here</a>, teams could go in and view the underlying outcome statements for each theme to see which outcomes have the highest opportunity to be addressed.</p>
+        </div>
+        <div class="flex-8">
+          <img src="img/total-opportunity-themes.png" alt="" class="r-img">
+        </div>
       </div>
+    </section>
+
+    <section id="outcome-based-segmentation">
+      <h2>Outcome-based Segmentation</h2>
+        <p>Outcome-based market segmentation is a process of identifying groups of customers with different unmet needs based on their desired outcomes. 
+          This approach focuses on understanding the "job" that the customer is trying to accomplish and uses their unmet desired outcomes as the basis for segmentation.</p>
+        <p>Below are the steps to segment the market based on outcomes.</p>
+        <img src="img/needs-based-segmentation-img.png" alt="">
+        <figcaption class="outcome-based-caption">
+          <a href="https://jobs-to-be-done.com/market-segmentation-through-a-jobs-to-be-done-lens-5ef9242de65" target="_blank">Outcome-based segmentation reveals segments of customers with different unmet needs — and the context that causes customers to struggle to get the job done.</a>
+        </figcaption>
+        
+        <p>I did this segmentation in RStudio. After the cluster analysis, I exported each cluster ID and put them back in my excel file to create opportunity landscapes for each segment.
+          I tried 2, 3, 4, 5, 6 clusters but based on the outcomes and profiling data, the 3 segment cluster made the most sense based on the data.
+        </p>
+        <img src="img/3-travel-segments.png" alt="" class = "three-travel-segments">
+        <p>In the end there were 3 clear segments based on the data. The Leisure Traveler, the Efficient Traveler, and the Budget-Savvy Traveler. Each segment has a variety of unmet needs, varying segment size, differing demographics, and areas of opportunities for a company like Airbnb to tackle.</p>
+        <div class="three-segment-summary">
+          <div>
+            <p><strong>Leisure Traveler</strong></p>
+              <li>Has 20 underserved needs</li>
+              <li>Segment size = 40%</li>
+              <li>This segments biggest unmet needs are around financial needs and the burden when purchasing accommodations for the vacation</li>
+              <li>Higher likelihood to be from the US</li>
+              <li>Higher likelihood to be 30-49 years old</li>
+          </div>
+          <div>
+            <p><strong>Efficient Traveler</strong></p>
+            <li>Has 34 underserved needs</li>
+            <li>Segment size = 43%</li>
+            <li>This segment struggles most determining travel arrangements determining what activities to do on the vacation</li>
+            <li>From a variety of countries</li>
+            <li>Equal distribution across ages</li>
+          </div>
+          <div>
+            <p><strong>Budget-Savvy Traveler</strong></p>
+            <li>Has 30 underserved needs</li>
+            <li>Segment size = 16%</li>
+            <li>This segment struggles the most with social/emotional needs and determining the travel arrangements when planning a vacation</li>
+            <li>Higher likelihood to be from the US</li>
+            <li>Equal distribution across ages</li>
+          </div>
+        </div>
     </section>
 
     <section id="airbnb-conclusion">
+      <h2>Recommended next steps</h2>
       <div class="context-container">
-        <h2>Conclusion of the project</h2>
-        <!-- your content here -->
+        
       </div>
     </section>
 
 
+    <section id="airbnb-reflections">
+      <h2>Reflections and improvements for next time</h2>
+      <div class="context-container">
+        
+      </div>
+    </section>
 
-
-
+    <section id="airbnb-learning-more">
+      <h2>Helpful resources</h2>
+        <p>If you are interested in learning more about Jobs-to-be-Done and the Outcome Driven approach, please visit these links below.</p>
+        <li><a href="https://jobs-to-be-done.com/market-segmentation-through-a-jobs-to-be-done-lens-5ef9242de65" target="_blank">Market Segmentation Through A Jobs-to-be-Done Lens</a></li>
+        <li><a href="https://jobs-to-be-done.com/jobs-to-be-done-a-framework-for-customer-needs-c883cbf61c90" target="_blank">Jobs-to-be-Done: A Framework for Customer Needs</a></li>
+        <li><a href="https://docs.google.com/document/d/1t9eDZcpER0Nwy0t1D1RRyVEWW85lxWvi3hkhVjZXoBQ/edit" target="_blank">A Framework of Questions for Jobs-to-be-Done Interviews</a></li>
+        <li><a href="https://strategyn.com/" target="_blank">Strategyn.com</a></li>
+      </div>
+    </section>
+    
     <!--footer-->
     <footer>
       <ul>
