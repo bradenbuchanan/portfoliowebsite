@@ -4,6 +4,10 @@
     color: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 p {
     line-height: 130%;
 }
@@ -178,7 +182,7 @@ footer li a {
 
 .about-content p {
     flex-basis: 60%;
-    font-size: 16 px;
+    font-size: 16px;
 }
 
 .about-content img {
@@ -252,6 +256,11 @@ section {
     margin-top: -140%;
 }
 
+.define-market-list {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }  
+
 /* core job */
 #core-job-travel-img {
     width: 100%;
@@ -266,6 +275,10 @@ section {
 #core-job-travel-img:hover {
     transform: scale(1.8);
     /* increase the scale by 20% */
+}
+
+.flight-level-list {
+    padding-top: 15px;
 }
 
 /* create-job-map */
@@ -400,7 +413,7 @@ section {
     transform: scale(2.6);
 }
 
-#hyperlink {
+.hyperlink {
     color: #4e7bc3;
     text-decoration: underline;
 }
@@ -457,13 +470,40 @@ section {
     left: 0;
     top: 5px;
   }
-
-
-  #airbnb-learning-more {
-    max-width: 960px;
-    margin: 0 auto;
-  }
   
   li a {
     text-decoration: underline;
+  }
+
+/* Airbnb conclusion/next steps */
+  #airbnb-conclusion {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  #airbnb-conclusion li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+    text-indent: -22px;
+  }
+
+  /* Reflections */
+  #airbnb-reflections {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  #airbnb-reflections li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+    text-indent: -22px;
+  }
+
+  /* Learning More */
+  #airbnb-learning-more {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 140px;
   }
