@@ -21,7 +21,7 @@ function checkPassword1() {
 function checkPassword2() {
   const enteredPassword = prompt('Enter password:');
   const hashedEnteredPassword = CryptoJS.SHA256(enteredPassword).toString();
-  const hashedCorrectPassword = '46aa338f8d9f28dd20de3540259fe3fb45d83cfb4bf222e4eb94975e13f4990c';
+  const hashedCorrectPassword = '620d6ac62331415d7ca592b1c5fb42df946392f6423bb288ebf5dbf322859dea';
     
   if (hashedEnteredPassword === hashedCorrectPassword) {
     window.location.href = 'blank.html';
