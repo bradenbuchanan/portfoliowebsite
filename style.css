@@ -16,6 +16,11 @@ li {
     line-height: 130%;
 }
 
+li {
+    margin-bottom: 10px;
+}
+
+
 strong {
     font-size: 100%;
 }
@@ -259,7 +264,7 @@ section {
 .define-market-list {
     padding-top: 10px;
     padding-bottom: 10px;
-  }  
+}
 
 /* core job */
 #core-job-travel-img {
@@ -422,23 +427,23 @@ section {
 #outcome-based-segmentation {
     max-width: 960px;
     margin: 0 auto;
-  }
+}
 
-  #outcome-based-segmentation img {
+#outcome-based-segmentation img {
     max-width: 100%;
     height: auto;
     border: 1px solid #ddd;
     box-shadow: 2px 2px 5px rgba(78, 78, 78, 0.3);
     border-radius: 5px;
-  }
+}
 
-  .outcome-based-caption {
+.outcome-based-caption {
     text-align: center;
     font-size: 14px;
     font-style: italic;
     margin-top: 5px;
     padding-bottom: 50px;
-  }
+}
 
 .three-travel-segments {
     border: 1px solid #ddd;
@@ -450,60 +455,147 @@ section {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-  }
-  
-  .three-segment-summary > div {
+}
+
+.three-segment-summary>div {
     width: calc(100% / 3);
     display: inline-block;
     vertical-align: top;
-  }
-  
-  .three-segment-summary li {
+}
+
+.three-segment-summary li {
     margin: 10px 0;
     padding-left: 20px;
     position: relative;
     text-indent: -22px;
-  }
-  
-  .three-segment-summary li::before {
+}
+
+.three-segment-summary li::before {
     position: absolute;
     left: 0;
     top: 5px;
-  }
-  
-  li a {
+}
+
+li a {
     text-decoration: underline;
-  }
+}
 
 /* Airbnb conclusion/next steps */
-  #airbnb-conclusion {
+#airbnb-conclusion {
     max-width: 960px;
     margin: 0 auto;
-  }
+}
 
-  #airbnb-conclusion li {
+#airbnb-conclusion li {
     margin: 10px 0;
     padding-left: 20px;
     position: relative;
     text-indent: -22px;
-  }
+}
 
-  /* Reflections */
-  #airbnb-reflections {
+/* Reflections */
+#airbnb-reflections {
     max-width: 960px;
     margin: 0 auto;
-  }
+}
 
-  #airbnb-reflections li {
+#airbnb-reflections li {
     margin: 10px 0;
     padding-left: 20px;
     position: relative;
     text-indent: -22px;
-  }
+}
 
-  /* Learning More */
-  #airbnb-learning-more {
+/* Learning More */
+#airbnb-learning-more {
     max-width: 960px;
     margin: 0 auto;
     padding-bottom: 140px;
+}
+
+/* 
+
+
+
+SPOTIFY PERSONA PAGE
+
+
+
+
+*/
+
+
+/* Spotify Introduction */
+#SpotifyIntroduction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+#SpotifyIntroduction div {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+}
+
+/* Research approach */
+
+#rationale {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+#rationale div {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+}
+
+
+.context-container1 {
+    display: flex;
+}
+
+.text-container {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+
+figure {
+    margin-left: 20px;
+    /* Adjust the space between text and image */
+}
+
+.UserTestingImg {
+    width: 100%;
+    max-width: 60%;
+    padding-bottom: 100px;
+}
+
+/* pictures of personas */
+.carousel-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
   }
+  
+  .carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carousel-image {
+    max-width: 500px; /* Adjust this value to change the size of the images */
+    height: auto;
+    object-fit: contain;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out; /* Add this line for a smooth transition */
+  }
+  
+  .carousel-image:hover {
+    transform: scale(1.8); /* Add this line to scale the image on hover */
+  }
+  
