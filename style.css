@@ -571,7 +571,6 @@ figure {
 .UserTestingImg {
     width: 100%;
     max-width: 60%;
-    padding-bottom: 100px;
 }
 
 /* pictures of personas */
@@ -579,23 +578,38 @@ figure {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-  }
-  
-  .carousel-container {
+}
+
+.carousel-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .carousel-image {
-    max-width: 500px; /* Adjust this value to change the size of the images */
+}
+
+.carousel-image {
+    max-width: 500px;
+    /* Adjust this value to change the size of the images */
     height: auto;
     object-fit: contain;
     padding: 10px;
-    transition: transform 0.3s ease-in-out; /* Add this line for a smooth transition */
-  }
-  
-  .carousel-image:hover {
-    transform: scale(1.8); /* Add this line to scale the image on hover */
-  }
-  
+    transition: transform 0.3s ease-in-out;
+    /* Add this line for a smooth transition */
+}
+
+.carousel-image:hover {
+    transform: scale(1.6);
+    /* Add this line to scale the image on hover */
+}
+
+.participant9 {
+    padding-top: 25px;
+}
+
+.note {
+    font-style: italic;
+}
+
+
+#spotify-improvements {
+    padding-bottom: 50px;
+}
